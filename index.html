@@ -1,63 +1,200 @@
 <!DOCTYPE html>
-<html lang="ar">
+
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>تحميل التطبيق</title>
+<title>تحميل تطبيق MultiBox Pro</title>
 
 <style>
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
     text-align: center;
-    background: #0f172a;
-    color: white;
-    padding: 30px;
+    padding: 20px;
 }
+
+.container {
+    max-width: 520px;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo {
+    width: 135px;
+    height: 135px;
+    border-radius: 28px;
+    margin: 0 auto 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+.badge {
+    display: inline-block;
+    background: rgba(34, 197, 94, 0.15);
+    color: #86efac;
+    border: 1px solid rgba(34, 197, 94, 0.35);
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
 h1 {
-    font-size: 28px;
+    font-size: 30px;
+    line-height: 1.4;
+    margin: 0 0 12px;
 }
-p {
+
+.subtitle {
     font-size: 18px;
+    color: #cbd5e1;
+    line-height: 1.8;
+    margin-bottom: 20px;
 }
+
+.card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    padding: 18px;
+    margin: 18px 0;
+    text-align: right;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.22);
+}
+
+.card h2 {
+    margin: 0 0 12px;
+    font-size: 20px;
+    color: #38bdf8;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #e5e7eb;
+    margin: 0;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.feature {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 10px;
+    border-radius: 14px;
+    font-size: 14px;
+    color: #f8fafc;
+}
+
 .btn {
-    background: #22c55e;
+    background: linear-gradient(135deg, #22c55e, #16a34a);
     color: white;
-    padding: 15px 25px;
+    padding: 16px 24px;
     text-decoration: none;
     font-size: 20px;
-    border-radius: 10px;
+    font-weight: bold;
+    border-radius: 16px;
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 18px;
+    box-shadow: 0 10px 25px rgba(34,197,94,0.35);
 }
-img {
-    width: 150px;
-    margin: 20px;
+
+.note {
+    margin-top: 18px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #d1fae5;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #94a3b8;
+}
+
+@media (max-width: 420px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
 }
 </style>
 
 </head>
+
 <body>
 
-<h1>🔥ـــ12ــــ طبيق في تطبيق واحد</h1>
+<div class="container">
 
-<p>
-MultiBox Pro تطبيق ذكي يجمع لك أكثر من 12 أداة مهمة في مكان واحد، مثل أدوات PDF، الذكاء الاصطناعي، حل المعادلات، الملاحظات، الحاسبات، التحويلات، حاسبة مثقال الذهب، الطاقة الشمسية، QR، الباركود، التسبيحات، والقوانين.
-<br><br>
-تطبيق مناسب للطلاب، الموظفين لصياغة الكتب، أصحاب الأعمال، وكل من يحتاج أدوات سريعة وسهلة في هاتفه.
-<br><br>
-لا تحتاج تحميل عدة تطبيقات… MultiBox Pro يوفر لك الأدوات المهمة بتطبيق واحد.
+```
+<img class="logo" src="https://github.com/amerpro1/app-download/blob/main/icon.png?raw=true" alt="MultiBox Pro">
+
+<div class="badge">🔥 أكثر من 12 أداة في تطبيق واحد</div>
+
+<h1>MultiBox Pro</h1>
+
+<p class="subtitle">
+    تطبيق ذكي يجمع لك الأدوات المهمة في مكان واحد، بسرعة وسهولة.
 </p>
 
-<img src="https://github.com/amerpro1/app-download/blob/main/icon.png?raw=true">
+<div class="card">
+    <h2>لماذا MultiBox Pro؟</h2>
+    <p>
+        تطبيق MultiBox Pro يجمع لك أكثر من 12 أداة مهمة مثل أدوات PDF، الذكاء الاصطناعي،
+        حل المعادلات، الملاحظات، الحاسبات، التحويلات، حاسبة مثقال الذهب، الطاقة الشمسية،
+        QR، الباركود، التسبيحات، والقوانين.
+        <br><br>
+        مناسب للطلاب، الموظفين لصياغة الكتب، أصحاب الأعمال، وكل من يحتاج أدوات عملية وسريعة في هاتفه.
+    </p>
 
-<br>
+    <div class="features">
+        <div class="feature">📄 أدوات PDF</div>
+        <div class="feature">🤖 ذكاء اصطناعي</div>
+        <div class="feature">🧮 حل المعادلات</div>
+        <div class="feature">💰 مثقال الذهب</div>
+        <div class="feature">☀️ الطاقة الشمسية</div>
+        <div class="feature">🏷️ QR وباركود</div>
+        <div class="feature">📝 كتب إدارية</div>
+        <div class="feature">🕌 تسبيحات</div>
+    </div>
+</div>
 
 <a class="btn" href="https://play.google.com/store/apps/details?id=com.amer.multiboxpro&pcampaignid=web_share">
-📥 تحميل الآن من Google Play
+    📥 تحميل الآن من Google Play
 </a>
 
-<p>✔️ مجاني بالكامل<br>
-✔️ سريع وسهل الاستخدام</p>
+<p class="note">
+    ✔️ مجاني بالكامل<br>
+    ✔️ سريع وسهل الاستخدام<br>
+    ✔️ لا تحتاج تحميل عدة تطبيقات
+</p>
+
+<div class="footer">
+    MultiBox Pro - أدوات كثيرة في تطبيق واحد
+</div>
+```
+
+</div>
 
 </body>
 </html>
